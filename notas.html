@@ -347,61 +347,73 @@
 
     <script>
       const notesData = { 
-        2022: { 
-            1: [
-                { materia: "Economía I", evaluaciones: [50, 58], final: 70 },
-                { materia: "Fundamentos de los Negocios", evaluaciones: [70, 63], final: 60 },
-                { materia: "Contabilidad I", evaluaciones: [86, 78], final: 64 },
-                { materia: "Cálculo I", evaluaciones: [86, 78], final: 63 },
-                { materia: "Lectura y Escritura Académica", evaluaciones: [79, 80], final: 67 },
-                { materia: "Revelación y Fe", evaluaciones: [74, 75], final: 76 },
-            ],
-            2: [
-                { materia: "Economía II", evaluaciones: [65, 62], final: 72 },
-                { materia: "Emprendimiento", evaluaciones: [61, 86], final: 69 },
-                { materia: "Contabilidad II", evaluaciones: [71, 72], final: 63 },
-                { materia: "Cálculo II", evaluaciones: [72, 98], final: 44 },
-                { materia: "Inglés I", evaluaciones: [60, 61], final: 55 },
-                { materia: "Moral Cristiana, Iglesia y Sociedad", evaluaciones: [75, 40], final: 65 },
-            ],
-        },
-        2023: { 
-            1: [
-                { materia: "Creación y Organización de Empresas", evaluaciones: [62, 92], final: 69 },
-                { materia: "Finanzas I", evaluaciones: [55, 72], final: 66 },
-                { materia: "Ventas-Técnicas de Negociación", evaluaciones: [61, 64], final: 60 },
-                { materia: "Inglés II", evaluaciones: [55, 60], final: 65 },
-                { materia: "Biblia y Vida Cristiana", evaluaciones: [70, 55], final: 53 },
-            ],
-            2: [
-              { materia: "Administración de Personal", evaluaciones: [61, 52], final: 56 },
-              { materia: "Comportamiento Organizacional", evaluaciones: [54, 72], final: 61 },
-              { materia: "Finanzas II", evaluaciones: [68, 75], final: 55 },
-              { materia: "Marketing", evaluaciones: [51, 86], final: 63 },
-              { materia: "Inglés III", evaluaciones: [85, 80], final: 79 },
-              { materia: "Sacramentos y Espiritualidad", evaluaciones: [67, 65], final: 55 },
-            ],
-        },
-        2024: {
-            1: [
-                { materia: "Logística Compras y Manejo de Inventarios", evaluaciones: [64, 50], final: 70 },
-                { materia: "Sistemas de Gestión ISO 9001", evaluaciones: [49, 80], final: 67 },
-                { materia: "Investigación Operativa", evaluaciones: [62, 59], final: 63 },
-                { materia: "Estadística Económica", evaluaciones: [70, 55], final: 56 },
-                { materia: "Gestión de Procesos Productivos y Comerciales", evaluaciones: [55,67], final: 72 },
-                { materia: "Inglés IV", evaluaciones: [51, 51], final: 57 },
-                { materia: "Taller de procesos comerciales", evaluaciones: [51, 69], final: 58 },
-            ],
-            2: [
-                { materia: "Responsabilidad Social y Desarrollo Sustentable", evaluaciones: [55, 68], final: 75 },
-                { materia: "Informática en los Negocios", evaluaciones: [78, 65], final: 77 },
-                { materia: "Gestión del Talento Humano", evaluaciones: [65, 59], final: 78 },
-                { materia: "Diseño e Implementación de Modelos de Negocios", evaluaciones: [60, 63], final: 69 },
-                { materia: "Preparación, Ejecución y Evaluación de Proyectos", evaluaciones: [57, 63], final: 59 },
-                { materia: "Inglés V", evaluaciones: [60, 55], final: 75 },
-            ],
-        },
-    };
+	  2022: { 
+	    1: [
+	      { materia: "Economía I", evaluaciones: [50, 58], final: 70 },
+	      { materia: "Fundamentos de los Negocios", evaluaciones: [70, 63], final: 60 },
+	      { materia: "Contabilidad I", evaluaciones: [86, 78], final: 64 },
+	      { materia: "Cálculo I", evaluaciones: [86, 78], final: 63 },
+	      { materia: "Lectura y Escritura Académica", evaluaciones: [79, 80], final: 67 },
+	      { materia: "Revelación y Fe", evaluaciones: [74, 75], final: 76 },
+	    ],
+	    2: [
+	      { materia: "Economía II", evaluaciones: [65, 62], final: 72 },
+	      { materia: "Emprendimiento", evaluaciones: [61, 86], final: 69 },
+	      { materia: "Contabilidad II", evaluaciones: [71, 72], final: 63 },
+	      { materia: "Cálculo II", evaluaciones: [72, 98], final: 44 },
+	      { materia: "Inglés I", evaluaciones: [60, 61], final: 55 },
+	      { materia: "Moral Cristiana, Iglesia y Sociedad", evaluaciones: [75, 40], final: 65 },
+	    ],
+	  },
+	  2023: { 
+	    1: [
+	      { materia: "Creación y Organización de Empresas", evaluaciones: [62, 92], final: 69 },
+	      { materia: "Finanzas I", evaluaciones: [55, 72], final: 66 },
+	      { materia: "Ventas-Técnicas de Negociación", evaluaciones: [61, 64], final: 60 },
+	      { materia: "Inglés II", evaluaciones: [55, 60], final: 65 },
+	      { materia: "Biblia y Vida Cristiana", evaluaciones: [70, 55], final: 53 },
+	    ],
+	    2: [
+	      { materia: "Administración de Personal", evaluaciones: [61, 52], final: 56 },
+	      { materia: "Comportamiento Organizacional", evaluaciones: [54, 72], final: 61 },
+	      { materia: "Finanzas II", evaluaciones: [68, 75], final: 55 },
+	      { materia: "Marketing", evaluaciones: [51, 86], final: 63 },
+	      { materia: "Inglés III", evaluaciones: [85, 80], final: 79 },
+	      { materia: "Sacramentos y Espiritualidad", evaluaciones: [67, 65], final: 55 },
+	    ],
+	  },
+	  2024: {
+	    1: [
+	      { materia: "Logística Compras y Manejo de Inventarios", evaluaciones: [64, 50], final: 70 },
+	      { materia: "Sistemas de Gestión ISO 9001", evaluaciones: [49, 80], final: 67 },
+	      { materia: "Investigación Operativa", evaluaciones: [62, 59], final: 63 },
+	      { materia: "Estadística Económica", evaluaciones: [70, 55], final: 56 },
+	      { materia: "Gestión de Procesos Productivos y Comerciales", evaluaciones: [55,67], final: 72 },
+	      { materia: "Inglés IV", evaluaciones: [51, 51], final: 57 },
+	      { materia: "Taller de procesos comerciales", evaluaciones: [51, 69], final: 58 },
+	    ],
+	    2: [
+	      { materia: "Responsabilidad Social y Desarrollo Sustentable", evaluaciones: [55, 68], final: 75 },
+	      { materia: "Informática en los Negocios", evaluaciones: [78, 65], final: 77 },
+	      { materia: "Gestión del Talento Humano", evaluaciones: [65, 59], final: 78 },
+	      { materia: "Diseño e Implementación de Modelos de Negocios", evaluaciones: [60, 63], final: 69 },
+	      { materia: "Preparación, Ejecución y Evaluación de Proyectos", evaluaciones: [57, 63], final: 59 },
+	      // Inglés V eliminado por duplicado
+	    ],
+	  },
+	  2025: {
+	    1: [
+	      { materia: "Trabajo de Grado 1", evaluaciones: [], final: 80 },
+	      { materia: "Comercio Exterior", evaluaciones: [], final: 76 },
+	      { materia: "Inglés V", evaluaciones: [], final: 70 },
+	      { materia: "Optativa 1", evaluaciones: [], final: 80 },
+	      { materia: "Taller de proyectos", evaluaciones: [], final: 75 },
+	      { materia: "Contexto de la organización y derecho empresarial", evaluaciones: [], final: 85 },
+	      { materia: "Gestión del riesgo y la toma de decisiones", evaluaciones: [], final: 70 },
+	    ],
+	  },
+	};
+
     
   
     function calcularPromedioParcial(evaluaciones) {
